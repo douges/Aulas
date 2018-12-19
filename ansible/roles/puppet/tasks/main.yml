@@ -1,0 +1,12 @@
+---
+# tasks file for puppet
+- name: Roles de instalação do Puppet-agent
+  hosts: all
+  tasks:
+    - include: ubuntu.yml
+    - include: install.yml
+      when: ansible_distribution == "Ubuntu"
+    - include: install_centos.yml
+      when: ansible_distribution == "CentOS"
+
+

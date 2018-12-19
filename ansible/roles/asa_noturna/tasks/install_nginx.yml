@@ -1,0 +1,10 @@
+- name: Instalando Nginx
+  package:
+    name: nginx
+    state: present
+
+- name: Iniciar Nginx
+  service:
+    name: nginx
+    state: restarted
+

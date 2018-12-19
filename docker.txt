@@ -1,0 +1,177 @@
+    1  apt install python -y
+    2  puppet agent -t
+    3  puppet --version
+    4  rpm -Uvh https://yum.puppet.com/puppet6/puppet6-release-el-7.noarch.rpm
+    5  uname
+    6  dpkg -uvh https://apt.puppetlabs.com/puppet6-release-xenial.deb
+    7  puppet agent -t
+    8  puppet agent -t --server
+    9  puppet agent -t --server devops.salas4linux.com.br
+   10  tail -f /var/log/syslog
+   11  cat /etc/apt/sources.list
+   12  puppet agent -t --server devops.salas4linux.com.br
+   13  cat /etc/apt/sources.list 
+   14  puppet agent -t --server devops.salas4linux.com.br
+   15  apt search docker-ce
+   16  puppet agent -t 
+   17  cat /etc/apt/sources.list  
+   18  puppet agent -t 
+   19  docker --version 
+   20  dockerps
+   21  docker ps
+   22  docker run debian ls /etc
+   23  docker ps -a
+   24  docker run --name gaviao_negro -it debian bash
+   25  docker ps
+   26  docker ps -a
+   27  docker run --name mulher_gaviao -it centos bash
+   28  docker ps
+   29  docker man
+   30  docker -man
+   31  docker ps
+   32  docker 87
+   33  docker attach 87
+   34  docker -man
+   35  docker top 
+   36  docker -man
+   37  docker top 87
+   38  docker ps-aux|grep top 87
+   39  docker pa
+   40  docker ps
+   41  docker rm 87
+   42  docker rm -f 87
+   43  docker images 
+   44  docker pull alpine
+   45  docker volume create --name dcwomen
+   46  docker volume ls
+   47  cd /var/lib/docker/volumes/dcwomen/_data/
+   48  ls
+   49  touch {arlequina,hera_venenosa,mulher_maravilha,supergirl}
+   50  ls
+   51  cd 
+   52  docker run -dti --name dcwomen -h womendc -v dcwomen:/root/pasta_womendc
+   53  docker run -dti --name dcwomen -h womendc -v dcwomen:/root/pasta_womendc centos bash
+   54  docker ps
+   55  docker exec -ti dcwomen
+   56  docker exec -ti dcwomen bash
+   57  cd /etc/docker/
+   58  ls
+   59  cd ..
+   60  ls
+   61  cd ..
+   62  ls
+   63  history 
+   64  cd /var/lib/docker/volumes/
+   65  ls
+   66  cd dcwomen/_data/
+   67  ls
+   68  cat mulher_maravilha 
+   69  echo Ivy Poison > hera_venenosa 
+   70  docker exec -ti dcwomen bash
+   71  cd 
+   72  mkdir  superman
+   73  mv superman/ supermen
+   74  mv supermen/ superman
+   75  cd superman/
+   76  touch supeman{1..10}
+   77  ls
+   78  cd
+   79  docker run -dti --name Clark - kent -v /root/superman/:/var/krypton debian bash
+   80  docker run -dti --name Clark -h kent -v /root/superman/:/var/krypton debian bash
+   81  docker exec -it Clark bash
+   82  docker run -d -p 8082:80 --name apache_server -h apache_server httpd 
+   83  iptables -nL
+   84  docker network create --subnet 10.0.0.0/16 dockerlan
+   85  docker network list
+   86  docker run -dti --name cliente_apache -h cliente_apache --ip 10.00.10 --net dockerlan debian bash
+   87  docker run -dti --name cliente_apache -h cliente_apache --ip 10.0.0.10 --net dockerlan debian bash
+   88  docker ps
+   89  docker network connect dockerlan apache_server 
+   90  docker exec -ti cliente_apache bash
+   91  docker tun -it --name curl -h cliente_curl cliente_apache_curl
+   92  docker run -it --name curl -h cliente_curl cliente_apache_curl
+   93  docker rm -f all
+   94  docker stop $(docker ps -a)
+   95  cd /
+   96  ls
+   97  cd ~
+   98  ls
+   99  cd
+  100  cd roo
+  101  cd /root/
+  102  ls
+  103  curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  104  ls -lh /usr/local/bin/docker-compose 
+  105  chmod + /usr/local/bin/docker-compose
+  106  mkdir wordpress
+  107  cd wordpress/
+  108  vim docker-compose.yml
+  109  docker-compose up -d
+  110  ls -l
+  111  chmod +x docker-compose.yml 
+  112  docker-compose up -d
+  113  ls -lh /usr/local/bin/docker-compose
+  114  chmod +x /usr/local/bin/docker-compose
+  115  docker-compose up -d
+  116  vim docker-compose.yml 
+  117  docker-compose up -d
+  118  doker ps
+  119  docker ps
+  120  vim docker-compose.yml 
+  121  docker ps
+  122  vim docker-compose.yml 
+  123  docker-compose up -d
+  124  docker ps
+  125  free -h
+  126  cd wordpress/
+  127  ls
+  128  docker-compose up -d
+  129  docker ps
+  130  docker ps -a
+  131  docker rm wordpress_mysql_server_1
+  132  docker ps -a
+  133  docker-compose up -d
+  134  docker ps
+  135  docker ps -a
+  136  docker rm wordpress_mysql_server_1 wordpress_wordpress_1
+  137  docker-compose up -d
+  138  docker ps -a
+  139  docker-compose up -d
+  140  docker ps -a
+  141  docker rm wordpress_wordpress_1 wordpress_mysql_server_1
+  142  docker ps -a
+  143  docker-compose up -d
+  144  docker ps
+  145  vim docker-compose.yml 
+  146  docker-compose up -d
+  147  docker ps
+  148  docker run -d --name portainer -p 8081:9000 -v /var/run/docker.sock portainer/portainer 
+  149  docker ps
+  150  docker rm -f bc
+  151  docker run -d --name portainer -p 8081:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer 
+  152  cd /var/run/docker.sock
+  153  cd /var/run/
+  154  ls
+  155  cat docker.sock 
+  156  vim docker.sock 
+  157  cd 
+  158  mkdir Dockerfile
+  159  cd Dockerfile/
+  160  vim Dockerfile
+  161  docker build . -t homem_formiga
+  162  vim Dockerfile 
+  163  docker build . -t homem_formiga
+  164  docker images
+  165  docker rmi homem_formiga:latest 
+  166  docker build . -t homem_formiga
+  167  docker save homem_formiga -o image_formiga.tar
+  168  ls
+  169  docker rmi homem_formiga
+  170  docker load -i image_formiga.tar 
+  171  ls
+  172  cd ..
+  173  ls
+  174  cd /root/Dockerfile/
+  175  ls
+  176  cmatrix
+  177  history >> docker.txt

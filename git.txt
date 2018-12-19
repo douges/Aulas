@@ -1,0 +1,441 @@
+    1  apt-get install ansible -y
+    2  apt install ansible -y
+    3  apt update 
+    4  apt install ansible
+    5  apt install python-pip -y
+    6  ansible --version
+    7  ca /etc/ansible/
+    8  ls
+    9  cat /etc/ansible/
+   10  cd /etc/ansible/
+   11  ls
+   12  vi hosts 
+   13  > hosts 
+   14  vi hosts 
+   15  pip install ansible
+   16  pip install ansible --upgrade
+   17  pip install pip --upgrade
+   18  logout
+   19  ansible --versin
+   20  ansible --version
+   21  cd /etc/ansible/
+   22  ls
+   23  vi ansible.cfg 
+   24  vim ansible.cfg 
+   25  vim hosts 
+   26  cat hosts 
+   27  ansible 'localhost,' -e 'ansible_connection=local' -m ping
+   28  ssh 192.168.99.10
+   29  vim /etc/ansible/ansible.cfg 
+   30  ansible all
+   31  ansible all -m ping
+   32  ansible -i hosts automation -m ping
+   33  ansible -i hosts docker -m ping
+   34  ansible all -m ping
+   35  ansible -m command - 'free -h'
+   36  ansible -m command -a 'free -h'
+   37  ansible all -m command -a 'uname -a'
+   38  ansible all -m command -a 'date'
+   39  cd /etc/ansible/
+   40  vim batman.yml7
+   41  vim batman.yml
+   42  ansible-playbook batman.yml 
+   43  ls
+   44  cat batman.yml 
+   45  vim batman.yml 
+   46  ansible-playbook batman.yml 
+   47  vim batman.yml 
+   48  ansible-playbook batman.yml 
+   49  vim batman.yml 
+   50  ansible-playbook batman.yml 
+   51  vim batman.yml 
+   52  ansible-playbook batman.yml 
+   53  sl
+   54  dpkg -l
+   55  dpkg -l |  grep sl
+   56  vim batman.yml 
+   57  cd /etc/ansible/
+   58  ld
+   59  ls
+   60  vim batman.yml 
+   61  ansible-playbook batman.yml 
+   62  vim batman.yml 
+   63  > robin
+   64  ansible-playbook batman.yml 
+   65  ls /tmp/
+   66  vim batman.yml 
+   67  ansible-playbook batman.yml 
+   68  cowsay
+   69  chmod 777 ironman.yml
+   70  ansible-playbook batman.yml 
+   71  vi ansible.cfg 
+   72  vim batman.yml 
+   73  ansible-playbook -e 'username=devops' batman.yml
+   74  vim batman.yml 
+   75  ansible-playbook -e 'username=devops' batman.yml
+   76  getent passwd devops
+   77  cat /etc/hosts
+   78  cat /etc/nsswitch.conf 
+   79  ping -c2 docker
+   80  ping -c2 devops
+   81  ping -c2 automation
+   82  > yronman.yml
+   83  ls
+   84  mv yronman.yml ironman.yml
+   85  cp batman.yml ironman.yml 
+   86  vim ironman.yml 
+   87  ansible-playbook ironman.yml 
+   88  vim ironman.yml [A
+   89  cat batman.
+   90  cat batman.yml 
+   91  vim ironman.yml 
+   92  ansible-playbook ironman.yml 
+   93  vim ironman.yml 
+   94  ansible-playbook ironman.yml 
+   95  cd /etc/ansible/
+   96  > index.php
+   97  vim index.php 
+   98  ansible-playbook ironman.yml 
+   99  vim ironman.yml 
+  100  ansible-playbook ironman.yml 
+  101  vim ironman.yml 
+  102  vim batman.yml 
+  103  vim ironman.yml 
+  104  ansible-playbook ironman.yml 
+  105  vim ironman.yml 
+  106  ansible-playbook ironman.yml 
+  107  vim ironman.yml 
+  108  ansible-playbook ironman.yml 
+  109  vim ironman.yml 
+  110  ansible-playbook ironman.yml 
+  111  vim ironman.yml 
+  112  ansible-playbook ironman.yml 
+  113  vim ironman.yml 
+  114  ansible-playbook ironman.yml 
+  115  vim ironman.yml 
+  116  ansible-playbook ironman.yml 
+  117  vim ironman.yml 
+  118  ansible-playbook ironman.yml 
+  119  mkdir roles
+  120  vim ansible.cfg 
+  121  cd roles/
+  122  ansible-galaxy init asa_noturna
+  123  ls asa_noturna/
+  124  ls
+  125  cd asa_noturna/
+  126  cd tasks/
+  127  ls
+  128  vim prerequisitos.yml
+  129  mv pre{requisitos,reqDebian}.yml
+  130  ls
+  131  vim prereqRedhat.yml
+  132  vim install_nginx.yml
+  133  vim deploy.yml
+  134  vim index.html
+  135  vim deploy.yml 
+  136  vim index.html
+  137  vim main.yml 
+  138  ls
+  139  ansible-playbook main.yml 
+  140  ls
+  141  vim main.yml 
+  142  vi prereqRedhat.yml 
+  143  vi deploy.yml 
+  144  ansible-playbook main.yml 
+  145  vim prereqRedhat.yml 
+  146  ls
+  147  vim deploy.yml 
+  148  vim main.
+  149  vim main.yml 
+  150  ls
+  151  vim main.yml 
+  152  ansible-playbook main.yml 
+  153  vim main.yml 
+  154  ls
+  155  vi deploy.yml 
+  156  vim prereqDebian.yml 
+  157  ls
+  158  vim install_nginx.yml 
+  159  ansible-playbook main.yml 
+  160  ls
+  161  vim prereqDebian.yml 
+  162  vim prereqRedhat.yml 
+  163  vim prereqDebian.yml 
+  164  vim prereqRedhat.yml 
+  165  ansible-playbook main.yml 
+  166  ls
+  167  vim deploy.yml 
+  168  ls ../templates/
+  169  mv index.html ../templates/
+  170  ansible-playbook main.yml 
+  171  cd /etc/ansible/roles
+  172  ls
+  173  ansible-galaxy init puppet
+  174  cd puppet/
+  175  ls
+  176  cd tasks/
+  177  ls
+  178  vim ubuntu.yml
+  179  vim install
+  180  vim install.yml
+  181  vim install_centos.yml
+  182  vim ubuntu.yml
+  183  ls
+  184  ls -l
+  185  vim main.yml 
+  186  ansible-playbook main.yml 
+  187  vim main.yml 
+  188  ls
+  189  vim ubuntu.yml 
+  190  vim install.yml 
+  191  vim install_centos.yml 
+  192  ansible-playbook main.yml 
+  193  vim install.yml 
+  194  vim main.yml 
+  195  vim install.yml 
+  196  ansible-playbook main.yml 
+  197  puppet --version
+  198  puppet resource package ccze
+  199  puppet resource package ccze ensure=present
+  200  puppet resource user aquaman
+  201  puppet resourse user aquaman ensure=present shell=/bin/bash managehome=true
+  202  puppet resource user aquaman ensure=present shell=/bin/bash managehome=true
+  203  puppet resource ueser aquaman
+  204  puppet resource user aquaman
+  205  puppet resource service nginx
+  206  puppet resource service nginx enable=false
+  207  puppet resource service nginx enable=true
+  208  puppet resource service package puppetserver ensure=present
+  209  puppet resource package puppetserver ensure=present
+  210  ls
+  211  vim arthur_cury.pp
+  212  ls
+  213  puppet apply arthur_cury.pp 
+  214  vim arthur_cury.pp
+  215  puppet apply arthur_cury.pp 
+  216  vim arthur_cury.pp
+  217  puppet apply arthur_cury.pp 
+  218  vim arthur_cury.pp
+  219  puppet apply arthur_cury.pp 
+  220  vim arthur_cury.pp
+  221  puppet apply arthur_cury.pp 
+  222  vim arthur_cury.pp
+  223  puppet apply arthur_cury.pp 
+  224  vim arthur_cury.pp
+  225  cd /etc/puppetlabs/
+  226  ls
+  227  cd puppet
+  228  cat puppet.conf 
+  229  la
+  230  ls
+  231  cd ..
+  232  cd puppetserver/
+  233  ls
+  234  cd ..
+  235  ls
+  236  cd code/
+  237  ls
+  238  cd modules/
+  239  puppet resource pdk ensure=present
+  240  puppet resource package pdk ensure=present
+  241  pdk new module base
+  242  puppet resource service puppetserver ensure=running
+  243  free -h
+  244  puppet resource service puppetserver ensure=running
+  245  sysctl -w vm.drop_caches=3
+  246  free -h
+  247  puppetserver ca list
+  248  cd /opt/puppetlabs/puppet/cache/
+  249  ls
+  250  cd /etc/puppetlabs/
+  251  ls
+  252  cd puppet/
+  253  ls
+  254  cd ..
+  255  ls
+  256  cd puppetlabs/code/
+  257  ls
+  258  cd modules/
+  259  ls
+  260  cd arraia_negra/
+  261  ls
+  262  cd manifests/
+  263  ls
+  264  cat 
+  265  cat  init.pp 
+  266  cd ..
+  267  ls
+  268  cd mera/
+  269  ls
+  270  cd manifests/
+  271  ls
+  272  cat init.pp 
+  273  cd ..
+  274  history
+  275  pdk new module doker
+  276  ls
+  277  cd doker/
+  278  ls
+  279  cd manifests/
+  280  ls
+  281  vim init.pp
+  282  cd ../../..
+  283  ls
+  284  cd environments/
+  285  çs
+  286  ls
+  287  cd production/
+  288  ls
+  289  cd manifests/
+  290  vim site.pp 
+  291  tail -f /var/log/syslog 
+  292  systemctl restart puppetserver
+  293  tail -f /var/log/syslog 
+  294  cd ../../..
+  295  ls
+  296  cd modules/doker/manifests/
+  297  vim
+  298  vim init.pp 
+  299  tail -f /var/log/syslog 
+  300  cd ../../..
+  301  cd environments/production/manifests/
+  302  vim site.pp 
+  303  tail -f /var/log/syslog 
+  304  cd ../../..
+  305  cd modules/doker/manifests/
+  306  vim init.pp 
+  307  tail -f /var/log/syslog 
+  308  cd /../../..
+  309  ls
+  310  cd /etc/puppetlabs/code/modules/
+  311  mv doker/ docker
+  312  ls
+  313  cd ../..
+  314  ls
+  315  cd ..
+  316  ls
+  317  cd puppetlabs/
+  318  ls
+  319  cd code/
+  320  ls
+  321  cd environments/
+  322  ls
+  323  cd production/manifests/
+  324  ls
+  325  vi site.pp 
+  326  vim /etc/puppetlabs/code/modules/docker/manifests/init.pp
+  327  mkdir kenobi
+  328  cd kenobi/
+  329  git init 
+  330  cd .git/
+  331  ls
+  332  cat HEAD 
+  333  ls hooks/
+  334  ls refs/
+  335  cd /root/kenobi/
+  336  git config user.name "Douglas Leão"
+  337  git config user.email "dleao@4linux.com"
+  338  git -l
+  339  git config -l
+  340  git config --global user.email "dleao@4linux.com"
+  341  vim README.md
+  342  vim padme.sh
+  343  git status 
+  344  git add README.md 
+  345  git status 
+  346  git commit -m "Arquivo de Repositorio"
+  347  git status 
+  348  git add padme.sh 
+  349  git commit -m "Verify Network"
+  350  bash padme.sh 
+  351  vim padme.sh 
+  352  bash padme.sh 
+  353  git status 
+  354  git commit -m "Verify Network"
+  355  git status 
+  356  git commit -m "Verify Network"
+  357  git status 
+  358  git status
+  359  git add .
+  360  git status
+  361  git commit -m "atualização"
+  362  git log
+  363  git log graph
+  364  git log --graph
+  365  git log --oneline
+  366  git revert ajuste
+  367  git log --oneline
+  368  git revert 9f
+  369  git revert 9f9b22e
+  370  git log --oneline
+  371  git remote add starwars https://github.com/douges/kenobi.git
+  372  git remote -v
+  373  git push starwars master
+  374  git pull starwars master 
+  375  git checkout -b dev
+  376  git branch 
+  377  ls
+  378  vim padme.sh 
+  379  vim README.md 
+  380  git status
+  381  git add .
+  382  git commit -m "git commit dev"
+  383  git checkout master 
+  384  cat padme.sh 
+  385  git log --graph 
+  386  git push starwars dev
+  387  git merge dev master 
+  388  git status
+  389  git checkout dev 
+  390  ls
+  391  git status
+  392  git checkout master 
+  393  git status
+  394  git merge master dev 
+  395  git push starwars master 
+  396  cd /etc/ansible/
+  397  ls
+  398  vim gitlab.yml
+  399  ansible playbook gitlab.yml 
+  400  ansible -playbook gitlab.yml 
+  401  ansible-playbook gitlab.yml 
+  402  cd /etc/gitlab/
+  403  ls
+  404  vim gitlab.rb 
+  405  ss -lntp
+  406  systemctl stop nginx
+  407  systemctl disable nginx
+  408  systemctl stop puppetserver.service 
+  409  free -h
+  410  gitlab-ctl reconfigure
+  411  gitlab-ctl status
+  412  cd  
+  413  cat .ssh/authorized_keys 
+  414  mkdir luke
+  415  cd luke/
+  416  git init
+  417  git remote in /root/luke/.git/
+  418  git remote add dark git@192.168.99.10:root/luke/.git
+  419  git remote 
+  420  git remote -v
+  421  vim sith
+  422  git status 
+  423  git add sith 
+  424  git status 
+  425  git commit -m "Dark Side"
+  426  git push dark master 
+  427  cd /etc/ansible/
+  428  ls
+  429  vim rundeck.yml
+  430  ansible-playbook rundeck.yml 
+  431  mkdir infra_agil6627
+  432  mv infra_agil6627/ ~
+  433  cp -r /etc/ansible/ ~/infra_agil6627/
+  434  cd ~
+  435  ls
+  436  git status
+  437  history
+  438  la
+  439  ls
+  440  git add infra_agil6627 .
+  441  history >> git.txt
